@@ -43,7 +43,7 @@
   },
   "autoload": {
     "psr-4": {
-      "irajtaghlidi\\LaravelCouchbase\\": "src"
+      "Ytake\\LaravelCouchbase\\": "src"
     },
     "files": [
       "src/transfer.php"
@@ -72,8 +72,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "irajtaghlidi\\LaravelCouchbase\\CouchbaseServiceProvider",
-        "irajtaghlidi\\LaravelCouchbase\\ConsoleServiceProvider"
+        "Ytake\\LaravelCouchbase\\CouchbaseServiceProvider",
+        "Ytake\\LaravelCouchbase\\ConsoleServiceProvider"
       ]
     }
   }
