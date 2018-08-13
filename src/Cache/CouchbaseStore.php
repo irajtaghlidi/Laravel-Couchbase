@@ -188,7 +188,10 @@ class CouchbaseStore extends TaggableStore implements Store
      */
     public function setBucket(string $bucket, string $password = '', string $serialize = 'php'): CouchbaseStore
     {
-        $this->bucket = $this->cluster->openBucket($bucket, $password);
+        if($password === '')
+            $this->bucket = $this->cluster->openBucket($bucket);
+        else
+            $this->bucket = $this->cluster->openBucket($bucket, $password);
         if ($serialize === 'php') {
             $this->bucket->setTranscoder('couchbase_php_serialize_encoder', 'couchbase_default_decoder');
         }
