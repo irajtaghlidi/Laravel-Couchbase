@@ -1,5 +1,5 @@
 {
-  "name": "ytake/laravel-couchbase",
+  "name": "irajtaghlidi/laravel-couchbase",
   "description": "Couchbase providers for Laravel",
   "keywords": [
     "laravel",
@@ -43,7 +43,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ytake\\LaravelCouchbase\\": "src"
+      "irajtaghlidi\\LaravelCouchbase\\": "src"
     },
     "files": [
       "src/transfer.php"
@@ -72,8 +72,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Ytake\\LaravelCouchbase\\CouchbaseServiceProvider",
-        "Ytake\\LaravelCouchbase\\ConsoleServiceProvider"
+        "irajtaghlidi\\LaravelCouchbase\\CouchbaseServiceProvider",
+        "irajtaghlidi\\LaravelCouchbase\\ConsoleServiceProvider"
       ]
     }
   }
