@@ -53,7 +53,7 @@ class CouchbaseStore extends TaggableStore implements Store
         Cluster $cluster,
         string $bucket,
         string $password = '',
-        string $prefix = null,
+        string $prefix = '',
         string $serialize = 'php'
     ) {
         $this->cluster = $cluster;
